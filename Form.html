@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLOOD BANK</title>
+  <link rel="stylesheet" href="/Css/Form.css">
+  <!-- rendar -->
+  <link rel="stylesheet" href="Css/Normalize.css">
+  <!-- googel font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Css/all.min.css">
+
+
+</head>
+
+<body>
+ 
+  <!-- start form -->
+  <div class="container">
+    <h2>Blood Bank</h2>
+    <form>
+      <div class="box">
+        <span><i class="fas fa-user"></i></span>
+        <input type="text" placeholder="Full Name" required class="input-data">
+      </div>
+      <div class="box">
+        <span><i class="fas fa-id-badge"></i></span>
+        <input type="text" placeholder="Enter your id" required class="input-data" oninput="this.value=this.value.replace(/[^0-9]/g, '')
+        .replace(/(\.. *)\./g, '$1');">
+      </div>
+      <div class="box">
+        <span><i class="fas fa-mobile-alt"></i></i></span>
+        <input type="text" placeholder="Enter your number" required class="input-data" oninput="this.value=this.value.replace(/[^0-9]/g, '')
+        .replace(/(\.. *)\./g, '$1');">
+      </div>
+      <div class="box">
+        <span><i class="fas fa-map-marker-alt"></i></span>
+        <input type="text" placeholder="Enter your adress" required class="input-data" >
+      </div>
+      <div class="space">
+        <input type="radio" name="gender">&nbsp;
+        <label >Male</label>
+        <input type="radio" name="gender">&nbsp;
+        <label >Female</label>
+      </div>
+      <div class="box">
+        <select class="select-date">
+          <option>Choise your blood type</option>
+          <option>A+</option>
+          <option>B+</option>
+          <option>A-</option>
+          <option>B-</option>
+          <option>AB+</option>
+          <option>AB-</option>
+          <option>O+</option>
+          <option>O-</option>
+        </select>
+      </div>
+      <div class="space">
+        <input type="radio" name="gender">&nbsp;
+        <label >Benefactor</label>
+        <input type="radio" name="gender">&nbsp;
+        <label >Sick</label>
+      </div>
+      <div class="box">
+        <select class="select-date">
+          <option value="">Choise your Country</option>
+          <option value="">Cairo</option>
+          <option value="">Giza</option>
+          <option value="">Alexandria</option>
+          <option value="">Dakahlia</option>
+          <option value="">Sharkia</option>
+          <option value="">Menoufia</option>
+          <option value="">Qalyubia</option>
+          <option value="">Beheira</option>
+          <option value="">Gharbia</option>
+          <option value="">Port said</option>
+          <option value="">Damietta</option>
+          <option value="">Ismailia</option>
+          <option value="">Suez</option>
+          <option value="">Kafer ElSheikh</option>
+          <option value="">Fayoum</option>
+          <option value="">Beni Suef</option>
+          <option value="">Matrouh</option>
+          <option value="">El Alamin</option>
+          <option value="">Siwa</option>
+          <option value="">North Sinai</option>
+          <option value="">Centeral sinai</option>
+          <option value="">Tour Sinai</option>
+          <option value="">Minya</option>
+          <option value="">Assiut</option>
+          <option value="">Sohag</option>
+          <option value="">Qena</option>
+          <option value="">Red Sea</option>
+          <option value="">Luxor</option>
+          <option value="">Aswan</option>
+          <option value="">Paintings</option>
+          <option value="">New Valley_Toshka</option>
+        </select>
+        <br>
+        <div class="space">
+          <input type="submit" name="submit" class="btn" value="Sent">
+        </div>
+      </div>
+    </form>
+  </div>
+
+      </body>
+</html>
